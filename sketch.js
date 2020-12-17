@@ -10,15 +10,11 @@ var block1,block2,block3,block4,block5,block6,block7,block8,block9,block10,block
 var polygon,polygonimg;
 var sling;
 var score = 0;
-var backgroundimg;
 
-function preload(){
-  polygonimg = loadImage("sprites/hexagon.png");
-  getbackgroundimage();
-}
 function preload(){
    polygonimg = loadImage("sprites/hexagon.png");
 }
+
 function setup() {
   var canvas = createCanvas(800,400);
   engine = Engine.create();
@@ -55,9 +51,8 @@ function setup() {
 }
 
 function draw() {
-  if(backgroundimg){
-    background(backgroundimg);
-  }
+ background(0);
+  
   Engine.update(engine);
 
   imageMode(CENTER);

@@ -96,6 +96,7 @@ function draw() {
   block14.score();
   block15.score();
   block16.score();
+   
   drawSprites();
 }
 

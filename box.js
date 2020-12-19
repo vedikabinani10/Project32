@@ -12,7 +12,7 @@ class Box {
       World.add(world, this.body);
     }
     score(){
-      if(this.Visibility<0 && this.Visibility>=105){
+      if(this.Visibility<105){
         score = score+1;
       }
     }
